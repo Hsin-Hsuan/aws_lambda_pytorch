@@ -1,4 +1,7 @@
 #!/bin/bash
+python3 -m venv venv
+source venv/bin/activate
+pip install torch==1.4.0+cpu torchvision==0.5.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
 mkdir -p packages
 cp -r ./venv/lib64/python3.6/site-packages/* packages
 cd packages
